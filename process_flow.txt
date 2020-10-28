@@ -1,0 +1,39 @@
+# Assignment1 Gopi Chandhan Simhadri
+
+# To activate environment
+PS C:\Users\GopiChandhanSimhadri\Envs\demog\Scripts> .\activate
+
+#To run project
+(demog) PS C:\Users\GopiChandhanSimhadri\Envs\demog\Scripts> d:
+(demog) PS D:\6th Sem\Capstone\assignment> python manage.py runserver
+
+#To make migrations folder in our app
+(demog) PS D:\6th Sem\Capstone\assignment> python manage.py makemigrations
+#To migrate
+(demog) PS D:\6th Sem\Capstone\assignment> python manage.py migrate
+
+#Open the link in browser to test the code  
+ http://127.0.0.1:8000/admin
+
+#To open shell
+(demog) PS D:\6th Sem\Capstone\assignment> python manage.py shell
+
+#To create user
+>>> from django.contrib.auth.models import User
+>>> user=User.objects.create_user('gopi',password='gopi')
+>>> user.is_superuser=True
+>>> user.is_staff=True
+>>> user.save()
+>>> exit()
+
+Open DB Sqlite3 and open database and check weather the user name is set 
+Then open the link http://127.0.0.1:8000/
+Enter name and type a message in text area and give the name and message and click the send message button 
+It will redirect to http://127.0.0.1:8000/thanks/
+Then open the link http://127.0.0.1:8000/admin
+You will get username and password. Enter the username and password you set  
+It will redirect to http://127.0.0.1:8000/admin/login/?next=/admin/ In this page you will get usernames if you want to add you can add or remove Users 
+if you loggedout you will be redirected to http://127.0.0.1:8000/admin/logout/
+
+                                                        it is done 
+                                                            :)
