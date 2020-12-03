@@ -1,5 +1,4 @@
 FROM python:3
-# ENV PYTHONUNBUFFERED 1
 RUN mkdir /assignment
 WORKDIR /assignment 
 COPY requirements.txt /assignment/
